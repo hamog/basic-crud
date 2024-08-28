@@ -2,12 +2,30 @@
 
 declare(strict_types=1);
 
+use App\Data\PostData;
+use App\Enums\PostStatus;
 use App\Http\Controllers\FeaturedPostController;
 use App\Http\Controllers\LocaleController;
 use App\Http\Controllers\PostController;
+use Carbon\CarbonImmutable;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
+Route::get('/home', function () {
+
+    //    $post = new PostData(
+    //        'Hello laravel-data',
+    //        'This is an introduction post for the new package',
+    //        PostStatus::PUBLISHED,
+    //        CarbonImmutable::now()
+    //    );
+    //
+    //    PostData::from([
+    //        'title' => 'Hello laravel-data',
+    //        'content' => 'This is an introduction post for the new package',
+    //        'status' => PostStatus::PUBLISHED,
+    //        'published_at' => CarbonImmutable::now(),
+    //    ]);
+
     return view('welcome');
 });
 

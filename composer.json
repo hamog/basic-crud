@@ -29,7 +29,8 @@
         "laravel/framework": "^11.0",
         "laravel/sanctum": "^4.0",
         "laravel/tinker": "^2.8",
-        "mews/purifier": "^3.4"
+        "mews/purifier": "^3.4",
+        "spatie/laravel-data": "^4.8"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.12",
